@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Login page</title>
+        <link rel="stylesheet" th:href="@{/style.css}" />
+        <meta charset="utf-8" />
+    </head>
+
+    <body>
+
+        <form action="/nutrition-store" method="post">
+            <td>food</td>
+            <select name="foods">
+                <option value="bread">bread</option>
+                <option value="caviar">caviar</option>
+                <option value="byte">byte</option>
+                <option value="salmon">salmon</option>
+            </select>
+
+
+            <td>drink</td>
+            <select name="drinks">
+                <option value="water">water</option>
+                <option value="whisky">whisky</option>
+                <option value="long-step">long-step</option>
+                <option value="beer">beer</option>
+            </select>
+            <input type="submit" value="Change!">
+        </form>
+    </body>
+</html>
